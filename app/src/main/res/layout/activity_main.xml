@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+   >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/blue"
+    android:text="    Intents"
+    android:textSize="30sp"
+    android:textColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:helperTextTextColor="@color/yellow"
+        app:helperText="@string/vvedite_email"
+        app:startIconDrawable="@drawable/ic_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_subject"
+        android:layout_marginTop="8dp"
+        app:prefixText="@string/tema_prefix"
+        app:helperText="@string/sobject"
+        app:helperTextTextColor="@color/yellow"
+        app:startIconDrawable="@drawable/ic_t"
+        app:endIconDrawable="@drawable/ic_t"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <EditText
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_subject"
+            android:hint="@string/enter_subject"
+            android:maxLength="25"
+
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperText="@string/vvedite"
+        app:helperTextTextColor="@color/yellow"
+        app:startIconDrawable="@drawable/ic_sms"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <EditText
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_sms"
+            android:hint="@string/enter_sms" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_sent"
+        android:text="@string/sent"
+        android:padding="12dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginHorizontal="16dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_sent"
+        app:iconGravity="textStart"/>
+</LinearLayout>

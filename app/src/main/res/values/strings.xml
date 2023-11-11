@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ibraimkulov_HW1_m3_-intent_TextInputLayout</string>
+    <string name="sent">SENT</string>
+    <string name="vvedite">Введите сообщение</string>
+    <string name="enter_sms">Enter SMS</string>
+    <string name="enter_subject">Enter subject</string>
+    <string name="sobject">Введите тему</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="vvedite_email">Введите Email</string>
+    <string name="tema_prefix">Тема:</string>
+</resources>
